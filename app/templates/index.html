@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<!--   
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                                        .--.__
+                                                      .~ (@)  ~~~---_
+                                                     {     `-_~,,,,,,)
+                                                     {    (_  ',
+                                                      ~    . = _',
+                                                       ~-   '.  =-'
+                                                         ~     :
+      .                                             _,.-~     ('');
+      '.                                         .-~        \  \ ;
+        ':-_                                _.--~            \  \;      _-=,.
+          ~-:-.__                       _.-~                 {  '---- _'-=,.
+             ~-._~--._             __.-~                     ~---------=,.`
+                 ~~-._~~-----~~~~~~       .+++~~~~~~~~-__   /
+                      ~-.,____           {   -     +   }  _/
+                              ~~-.______{_    _ -=\ / /_.~
+                                   :      ~--~    // /         ..-
+                                   :   / /      // /         ((
+                                   :  / /      {   `-------,. ))
+                                   :   /        ''=--------. }o
+                      .=._________,'  )                     ))
+                      )  _________ -''                     ~~
+                     / /  _ _
+                    (_.-.'O'-'.        
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-->
+  <head>
+    <meta charset="utf-8">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style1.css') }}">
+    <link rel="icon" href="{{ url_for('static',filename='img/favicon.png') }}">
+  </head>
+  <body>
+    <div>
+      <header>
+        <div class="name">WELCOME HOME, MR SPACEKEK</div>
+        <p class="date">{{ time }}</p>
+      </header>
+      <br />
+      <br />
+      <article class="main_content">
+        <div class="content">
+          <div class="header">CLEARNET</div>
+          <a href="https://www.google.com">GOOGLE</a><br />
+          <a href="https://www.yahoo.com">YAHOO</a><br />
+          <a href="https://gmail.google.com">GMAIL</a><br />
+          <a href="https://www.youtube.com">YOUTUBE</a><br />
+        </div>
+        <br />
+        <div class="content">
+        <div class="header">CHANS</div>
+          <p>{{ cerr }}</p>
+          {% for chan in chans %}
+          <a href="http://{{ chan }}">{{ chan }}</a><br />
+          {% endfor %}
+        </div>
+        </div>
+        <br />
+      </article>
+    </div>
+  </body>
+</html>
+

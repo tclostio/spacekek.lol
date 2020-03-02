@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+
+@font-face {
+	font-family: 'Terminus';
+	src: url('/static/fonts/terminus.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'TerminusBold';
+	src: url('/static/fonts/terminus_bold.ttf') format('truetype');
+}
+
+body {
+	font-family: 'Terminus';
+	font-size: 12pt;
+	margin: 0 auto;
+	max-width: 50em;
+	line-height: 1.5;
+	padding: 4em 1em;
+	background-color: #D9E3E7;
+}
+
+a:link {
+	color: #F6F6F6;
+}
+
+a:visited {
+	color: #95B9DF;
+}
+
+p.date {
+	text-align: center;
+}
+
+div.name {
+	font-family: 'Terminus';
+	text-align: center;
+	font-size: 34pt;
+	color: #555;
+	line-height: auto;
+}
+
+div.header {
+	font-family: 'Terminus';
+	text-align: center;
+	font-size: 28pt;
+	color: #F6F6F6;
+	line-height: auto;
+}
+
+div.content {
+	width: 600px;
+	height: auto;
+	padding: 15px;
+	margin: auto;
+	text-justify: inter-word;
+	color: #F6F6F6;
+	background-color: #48616C;
+	box-shadow: 10px 10px #38393A;
+}
+
+div.links {
+	width: 400px;
+	height: auto;
+	padding: 15px;
+	margin: auto;
+	text-align: center;
+	color: #F6F6F6;
+	background-color: #48616C;
+	box-shadow: 10px 10px #38393A;
+}
+
+article.main_content {
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+article.links {
+	text-align: center;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+span.keyword {
+	color: #EAEC4A;
+	margin: 2px 0 2px 0;
+}
+
+span.keyword_l {
+	color: #A9C7FB;
+}
+
+ul.resume {
+	list-style: none;
+}
