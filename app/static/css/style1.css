@@ -56,6 +56,16 @@ div.content {
 	text-justify: inter-word;
 	color: #F6F6F6;
 	background-color: #48616C;
+	box-shadow: 4px 4px #38393A;
+	transition: 0.2s;
+	position: relative;
+	left: 6px;
+	top: 6px;
+}
+
+div.content:hover {
+	left: 0px;
+	top: 0px;
 	box-shadow: 10px 10px #38393A;
 }
 
