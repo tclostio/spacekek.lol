@@ -14,7 +14,7 @@ def index():
     rel_path = 'static/text/chans.txt'
     abs_file_path = os.path.join(script_dir, rel_path)
     try:
-        r = requests.get('https://eldritchdata.neocities.org/IndexTXT/Misc/ChanList.txt')
+        r = requests.get('https://eldritchdata.neocities.org/TXT/Lists/ChanList.txt')
         chan_list = r.text.splitlines()
         chan_list = chan_list[3:]
     except requests.exceptions.RequestException:

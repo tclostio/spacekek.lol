@@ -63,6 +63,10 @@ div.content {
 	top: 6px;
 }
 
+iframe.search {
+	text-align: center;
+}
+
 div.content:hover {
 	left: 0px;
 	top: 0px;
